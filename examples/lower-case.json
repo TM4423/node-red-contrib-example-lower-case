@@ -1,0 +1,68 @@
+[
+    {
+        "id": "d8a8e200bbe3e08a",
+        "type": "tab",
+        "label": "フロー 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9e23508b79cfe84d",
+        "type": "inject",
+        "z": "d8a8e200bbe3e08a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "AbCdEf",
+        "payloadType": "str",
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "8aa07779bed8c8f2"
+            ]
+        ]
+    },
+    {
+        "id": "3e2066b619a5467a",
+        "type": "debug",
+        "z": "d8a8e200bbe3e08a",
+        "name": "debug 65",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "8aa07779bed8c8f2",
+        "type": "lower-case",
+        "z": "d8a8e200bbe3e08a",
+        "name": "",
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "3e2066b619a5467a"
+            ]
+        ]
+    }
+]
